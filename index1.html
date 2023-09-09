@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<!--custom css-->
+<link type="text/css" rel="stylesheet" href="CSS/stylish.css" />
+
+<style>
+  .navbar-custom {
+        background-color: rgb(41, 39, 39);
+  }
+   .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    background-color: #0a0a0a; /* Change background color */
+      color: #ffffff;
+  }
+  .dropdown-toggle:hover
+  {
+background: #3d3d3d;
+color:#ffffff
+  }
+  .expertise-box,.expertise-box1 {
+    margin-bottom: 20px;
+  }
+  label,h2
+  {
+    color:#ffffff;
+  }
+  /* Set a fixed width for the dropdown content */
+
+  .btn-group {
+    width: 28%;
+}
+.service-section {
+    margin-top: -59px;
+    padding-top: 34px;
+    background: rgb(255, 255, 255);
+}
+
+.nav-item:hover
+{
+background-color: rgb(82, 82, 82);
+color: #ffffff;
+}
+h6
+{
+  text-align: center;
+}
+@media (max-width: 767px) {
+#servheadfont
+  {
+    font-size: 35px;
+  }
+  .dropdown-toggle
+  {
+    width: 268%;
+    margin-left: -61px;
+  }
+  .float-end
+  {
+    margin-top: 12px;
+  }
+  .form
+  {
+    margin-left: 0px;
+    border-radius: 23px;
+  }
+}
+</style>
+<title>Document</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid">
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Header</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">contact and contact-form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="productpic">
+        <style>
+            .image-with-border{
+              border-bottom: 1px solid #ccc;
+              padding-bottom: 10px;
+            }
+          </style>
+          
+          <div class="image-with-border">
+            <img src="image/join us.png" class="img-fluid w-100" alt="Product Picture">
+          </div>
+    <!--services section-->
+    <div class="service-section">
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 style="color:rgb(255, 160, 18);font-size: 66px;font-family: -webkit-body;" id="servheadfont"><b>services</b></h3>
+                <div class="container mt-5">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="expertise-box">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise1" onclick="toggleDescriptions('expertise1')">
+                              Social Media Marketing
+                              <span class="ms-2">
+                                <i class="bi bi-caret-down"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="collapse mt-3" id="expertise1">
+                            <img src="image/servicepic1.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <p style="font-size: 20px;">
+                                Our expertise lies in crafting engaging social media campaigns that connect with your target audience, 
+                                drive brand awareness, and boost customer engagement.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="expertise-box">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise2" onclick="toggleDescriptions('expertise2')">
+                              Search Engine Optimization
+                              <span class="ms-2">
+                                <i class="bi bi-caret-down"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="collapse mt-3" id="expertise2">
+                            <img src="../freehostdigital/image/servicepic2.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <p>
+                              Our specialization in SEO involves optimizing your website to rank higher in search engine results, driving organic traffic and increasing your online visibility.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="expertise-box">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise3" onclick="toggleDescriptions('expertise3')">
+                              Content Marketing
+                              <span class="ms-2">
+                                <i class="bi bi-caret-down"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="collapse mt-3" id="expertise3">
+                            <img src="image/servicepic3.jpg" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <p>
+                            With our expertise in content marketing,
+                            we create valuable and relevant content 
+                            that resonates with your audience,
+                            drives engagement, and establishes thought leadership.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="expertise-box">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#expertise4" onclick="toggleDescriptions('expertise4')">
+                              E-commerce Marketing
+                              <span class="ms-2">
+                                <i class="bi bi-caret-down"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="collapse mt-3" id="expertise4">
+                            <img src="image/servicepic4.png" alt="Social Media Campaigns" class="img-fluid" style="max-width: 20%;border-radius:34px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);">
+                            <p>
+                              Our specialization in e-commerce marketing involves driving online sales, optimizing product listings, and implementing strategies to enhance user experience and conversion rates.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--customer testimonials-->
+    <div class="container-fluid" style="background-color: #000000; padding-bottom: 30px;">
+    <div class="p-3 mb-2 bg-transparent text-dark">
+      <div class="container mt-5" style="margin-bottom: 30px;color: #6c0097;">
+          <h1 class="text-center">
+              Customers Testimonials
+          </h1>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <img src="image/testimonial1.png" class="float-start" style="max-width: 50%;max-width: 40%;
+              margin-left: 133px; border-radius: 10px" alt="Testimonial 1">
+          </div>
+          <div class="col-md-6">
+              <img src="image/testimonial2.png" class="float-end" style="max-width: 50%;max-width: 40%;
+              margin-right: 133px; border-radius: 10px;" alt="Testimonial 2">
+          </div>
+      </div>
+  </div>
+  
+</div>
+</div>
+  <br>
+    <!--contact information-->
+    <div class="container mt-5">
+      <div class="row">
+
+          <div class="col-md-6" class="form" style="background-color: rgb(0, 0, 0); margin-left:auto; border-radius: 5px;padding-bottom:20px ;">
+              <div class="container mt-5">
+                  <h2 class="text-center">Fill the form get call back soon</h2>
+                  <form>
+                      <div class="mb-3">
+                          <label for="firstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                      </div>
+                      <div class="mb-3">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                      </div>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                      </div>
+                      <div class="mb-3">
+                          <label for="mobile" class="form-label">Mobile Number</label>
+                          <input type="tel" class="form-control" id="mobile" placeholder="Enter your mobile number">
+                      </div>
+                      <div class="mb-3">
+                          <label for="message" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-success" style="background: rgb(255, 255, 255);color:#000000; border: none;"><b>Submit</b></button>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <!--contact information-->
+  <div class="container-fluid" style="margin-top:25px; margin-bottom: -10px; color:white; background-color: #000000;">
+  <div class="box" style="padding: 10px;"></div>
+    <h6>Address : path manasrovar,near v-mart,jaipur(Rjasthan)</h6>
+  <h6 type="tel:6376318678">Contact : 6376318678</h6>
+  <h6 type="email">Email : vishalthanviphalodi@gmail.com</h6>
+  <footer class="text-center">
+    <p>&copy; 2023 Vishal Thanvi All Rights Reserved.</p>
+  </footer>
+</div>
+</div>
+</body>
+</html>
